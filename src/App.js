@@ -1,34 +1,24 @@
-import React, { useState } from 'react'
-import './Animaciones.css'
+import React from 'react'
+import Acoordion from './components/Acoordion'
 
-const Header = ({ show }) => {
-
-
-  const classes = show ? 'header header-active' : 'header'
-
-  return (
-    <header className={classes}>
-      <h1>
-        Transiciones CSS en linea
-        <span role='img' aria-label='fire'>
-          🔥
-        </span>
-      </h1>
-    </header>
-  )
-}
 
 const App = () => {
-  const [active, setActive] = useState(false)
-
-  const toggle = () => setActive(!active)
-
   return (
     <div>
-      <button onClick={toggle}>
-        {active ? 'Desactivar' : 'Activar'}
-      </button>
-      <Header show={active} />
+      <Acoordion
+        title={345353}
+        content='otro texto un poco mas largo fdjkghjkdhfgjkgfkjhdgfkhkjdfghhdfgkldgfkjdgfkljdgj lkdfhgkjfgd'
+        bgColor='purple'
+      />
+
+      <Acoordion
+        title='mi titulo'
+        content='otro texto un poco mas largo fdjkghjkdhfgjkgfkjhdgfkhkjdfghhdfgkldgfkjdgfkljdgj lkdfhgkjfgd'
+        bgColor='orange'
+      />
+
+
+
     </div>
   )
 }
