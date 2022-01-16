@@ -1,0 +1,23 @@
+
+.ball{
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    background: tomato;
+    /*esta seria el estado natural */
+    transition:  margin-left 1.5s 1s ease-in-out ; 
+    /*se agregan prefijos de compatibilidad para diferentes navegadores */
+    -webkit-transition:  margin-left 1.5s 1s ease-in-out;
+    -moz-transition:margin-left 1.5s 1s ease-in-out ;
+    -o-transition: margin-left 1.5s 1s ease-in-out;
+    
+    /*
+    Esto es lo mismo que la linea estado natural
+    transition-property:  margin-left;
+    transition-duration: 1.5s;
+    transition-delay: 1s;
+    transition-timing-function: ease; */
+    margin-left: 6em;
+
+}
+
