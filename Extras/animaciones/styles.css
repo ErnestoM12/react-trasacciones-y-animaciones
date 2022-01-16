@@ -1,0 +1,127 @@
+/*agregar animacion*/
+@keyframes showUp {
+    /*Existen varias formas animacion*/
+    from {
+     transform: scale(0.6);
+    }
+    to{
+      transform: scale(1);
+    }
+
+  
+}
+
+
+/*soporte a navegadores viejos*/
+
+@keyframes latido {
+       0%{
+        transform: scale(1) translateX(0%);
+        opacity: 0.5;
+        background: yellow;
+       }
+       50%{
+        transform: scale(0.5) translateX(100%);
+        opacity: 1;
+        background: red;
+        }
+  
+}
+
+
+
+@-webkit-keyframes latido {
+    0%{
+     transform: scale(1) translateX(0%);
+     opacity: 0.5;
+     background: yellow;
+    }
+    50%{
+     transform: scale(0.5) translateX(100%);
+     opacity: 1;
+     background: red;
+     }
+    100%{
+      transform: scale(1) translateX(0%);
+       opacity: 0.5;
+       background: green;
+    } 
+}
+
+
+@-moz-keyframes latido {
+    0%{
+     transform: scale(1) translateX(0%);
+     opacity: 0.5;
+     background: yellow;
+    }
+    50%{
+     transform: scale(0.5) translateX(100%);
+     opacity: 1;
+     background: red;
+     }
+    100%{
+      transform: scale(1) translateX(0%);
+       opacity: 0.5;
+       background: green;
+    } 
+}
+
+
+@-o-keyframes latido {
+    0%{
+     transform: scale(1) translateX(0%);
+     opacity: 0.5;
+     background: yellow;
+    }
+    50%{
+     transform: scale(0.5) translateX(100%);
+     opacity: 1;
+     background: red;
+     }
+    100%{
+      transform: scale(1) translateX(0%);
+       opacity: 0.5;
+       background: green;
+    } 
+}
+
+/*soporte a navegadores viejos*/
+
+.ball{
+    height: 10em;
+    width: 10em;
+    border-radius: 50%;
+    background: tomato;
+    /*·Especificamos 
+        la duracion, =1ms
+        el nombre de la animcion, = latido
+        alguna funcion (ease, ease-in,ease-in-out .etc ) de animacion, =ease
+        número de repeticions(2,4, infinite), = 2
+        tiempo del retraso para que la animacón de ejecute =1s     
+    */
+    animation:  1s latido ease 2  1s ;
+    
+    /* 
+    todo esto es la liena de arriba
+    animation-duration: 1s ;
+    animation-name: latido;
+    animation-timing-function: ease;
+    animation-iteration-count: 2;
+    animation-delay:1s ; 
+    animation-direction: alternate;
+    animation-fill-mode:backwards; //sirve para quedarde con las propiedades de una 
+    transicion  al final backwards 0%  forwards 100% 
+
+    */
+
+   
+    
+
+  /*
+  soporte navegodres antiguos
+  */
+    -webkit-animation:  1000ms latido ease 2 ;
+    -moz-animation:  1000ms latido ease 2 ;
+    -o-animation:  1000ms latido ease 2 ;
+}
