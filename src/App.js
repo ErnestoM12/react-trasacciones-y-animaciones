@@ -1,32 +1,64 @@
 import React from 'react'
-import Carrousel from './components/Carrousel'
-
-const images = [
-  {
-    src: 'https://images.pexels.com/photos/2098427/pexels-photo-2098427.jpeg?auto=compress&cs=tinysrgb&h=650&w=940',
-    title: 'El universo el origen'
-  },
-  {
-    src: 'https://images.pexels.com/photos/2521470/pexels-photo-2521470.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-    title: 'El diseño tambien es arte!'
-  },
-  {
-    src: 'https://images.pexels.com/photos/3018365/pexels-photo-3018365.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260',
-    title: 'La fotogradia el mejor camino!'
-  },
-  {
-    src: 'https://images.pexels.com/photos/2108709/pexels-photo-2108709.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500',
-    title: 'La naturaleza siempre la guia'
-  }
-]
-
+import Fade from 'react-reveal/Fade';
+import Flip from 'react-reveal/Flip';
+import Rotate from 'react-reveal/Rotate';
+import Zoom from 'react-reveal/Zoom';
+import Bounce from 'react-reveal/Bounce';
+import Roll from 'react-reveal/Roll';
 
 const App = () => {
   return (
     <div>
-      <Carrousel
-        images={images}
-      />
+      <Fade>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Fade>
+      <Flip>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Flip>
+
+      <Rotate>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Rotate>
+
+      <Zoom>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Zoom>
+      <Bounce>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Bounce>
+      <Roll>
+        <section>
+          <h3>Ejemplo de titulo</h3>
+          <p>
+            Sint cillum exercitation proident sit elit duis quis sunt eu exercitation veniam. Eu esse aliqua aliquip excepteur id irure. Veniam commodo officia incididunt ea dolor sunt proident id nisi nostrud sunt laborum velit. Dolore labore eu culpa consectetur nisi consectetur consectetur. Eu non mollit aliquip qui magna commodo aliquip magna veniam duis ut.
+          </p>
+        </section>
+      </Roll>
 
     </div>
   )
